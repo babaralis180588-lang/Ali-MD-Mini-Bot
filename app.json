@@ -1,26 +1,27 @@
 {
   "name": "ALI-MD-MINI",
-  "description": "ALI MD MINI WhatsApp Bot Loader",
+  "description": "Javascript WhatsApp bot made by ALI MD MINI",
   "logo": "https://raw.githubusercontent.com/babaralis180588-lang/Ali-MD-Mini-Bot/main/ali.jpg",
-  "keywords": [
-    "ALI-MD-MINI"
-  ],
+  "keywords": ["ALI-BOT"],
   "success_url": "/",
-  "stack": "heroku-24",
+  "stack": "container",
+  
   "env": {
     "MONGODB_URL": {
-      "description": "MongoDB connection string for session storage",
+      "description": "MongoDB connection string for database storage",
       "required": false
     },
     "DB_NAME": {
-      "description": "Database name for MongoDB (default: ladlaking)",
+      "description": "Database name for MongoDB (default: Ali Md)",
       "required": false,
-      "value": "ladlaking"
+      "value": "Ali Md"
     }
   },
+
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
     }
-  ]
+  ],
+  "stack": "heroku-24"
 }
